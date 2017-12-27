@@ -1,4 +1,6 @@
-local ret_status="%(?:%{$fg_bold[green]%}λ :%{$fg_bold[red]%}λ %s)"
+# Change this symbol to whatever your favorite Greek letter is
+local SYMBOL="Ξ"
+local ret_status="%(?:%{$fg_bold[green]%}$SYMBOL :%{$fg_bold[red]%}$SYMBOL %s)"
 
 function get_pwd(){
   git_root=$PWD
